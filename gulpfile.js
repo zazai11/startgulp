@@ -26,7 +26,7 @@ function styles() {
             outputStyle: 'compressed' //сжимает css в css.min(режим сжатия можно менять (expandet))
         }))
         .pipe(concat('style.min.css')) // переименовывает файл
-        .pipe(autoPrefixer({
+        .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 versions'], // делает нерабочие css Свойства в отсталых бразуерах в рабочие
             grid: true,
         }))
